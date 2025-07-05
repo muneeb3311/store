@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Muneeb ur Rehman - Online Store</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="images/Description MM Letter Logo - simple black and….jpeg" alt="Muneeb ur Rehman">
+                <img src="images/Description MM Letter Logo - simple black and….jpeg" alt="Muneeb ur Rehman" width="40" height="40">
                 <h1>Muneeb ur Rehman</h1>
             </div>
             <nav class="navbar">
@@ -21,7 +22,7 @@
                     <li><a href="#products">Products</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                    <li><a href="#cart"><i class="fas fa-shopping-cart"></i> <span class="cart-text">Cart</span></a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -46,7 +47,7 @@
             <div class="product-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/Shenzhen Manufacture New Fashion Stainless Steel Luxury Luminous Quartz Light Watch - Buy Light Watch,Men Watches,Luxury Wristwatches Product on Alibaba_com.jpeg" alt="Product 1">
+                        <img src="images/Shenzhen Manufacture New Fashion Stainless Steel Luxury Luminous Quartz Light Watch - Buy Light Watch,Men Watches,Luxury Wristwatches Product on Alibaba_com.jpeg" alt="Premium Watch" width="300" height="300">
                         <div class="product-overlay">
                             <button class="add-to-cart">Add to Cart</button>
                         </div>
@@ -66,7 +67,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/JBL Tune 720BT - Wireless.jpeg" alt="Product 2">
+                        <img src="images/JBL Tune 720BT - Wireless.jpeg" alt="Wireless Headphones" width="300" height="300">
                         <div class="product-overlay">
                             <button class="add-to-cart">Add to Cart</button>
                         </div>
@@ -86,7 +87,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/df0a0d2c-9be8-4aff-9ffe-49cc9f225609.jpeg" alt="Product 3">
+                        <img src="images/df0a0d2c-9be8-4aff-9ffe-49cc9f225609.jpeg" alt="Smartphone" width="300" height="300">
                         <div class="product-overlay">
                             <button class="add-to-cart">Add to Cart</button>
                         </div>
@@ -112,13 +113,13 @@
         <div class="container">
             <h2>About Muneeb's Store</h2>
             <div class="about-content">
+                <div class="about-image">
+                    <img src="images/online-shopping-horizontal-banner-template.png" alt="About Us" width="600" height="400">
+                </div>
                 <div class="about-text">
                     <p>Welcome to Muneeb ur Rehman's online store, where quality meets affordability. We are committed to providing our customers with the best products and excellent customer service.</p>
                     <p>Our mission is to make online shopping a seamless and enjoyable experience for everyone. We carefully select each product in our inventory to ensure it meets our high standards.</p>
                     <p>Shop with confidence knowing that we stand behind every product we sell. Your satisfaction is our top priority.</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/online-shopping-horizontal-banner-template.png" alt="About Us">
                 </div>
             </div>
         </div>
@@ -129,15 +130,15 @@
         <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-form">
-                <form>
+                <form id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
@@ -160,22 +161,22 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Store Street, City</p>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                    <p><i class="fas fa-envelope"></i> info@muneebstore.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Gulshan e Hadeed, Karchi</p>
+                    <p><i class="fas fa-phone"></i> +92 300 4996384</p>
+                    <p><i class="fas fa-envelope"></i> muneeburrehman3311@gmail.com</p>
                 </div>
                 <div class="footer-section">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561571711380" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/muneebu.r.rehman/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ateeq-ur-rehman-911191318/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Muneeb ur Rehman. All Rights Reserved.</p>
+                <p>&copy; <span id="year"></span> Muneeb ur Rehman. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
